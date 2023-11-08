@@ -2,7 +2,7 @@ import { configureStore } from "@reduxjs/toolkit";
 
 const store = configureStore({
   reducer: {
-    totalCounter: counterReducer,
+    totalsCounter: counterReducer,
   },
 });
 
