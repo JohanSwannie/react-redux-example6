@@ -20,6 +20,9 @@ const counterSlice = createSlice({
     divide: (state) => {
       state.count /= 2;
     },
+    round: (state) => {
+      state.count = Math.round(state.count);
+    },
     reset: (state) => {
       state.count = 0;
     },
@@ -29,7 +32,14 @@ const counterSlice = createSlice({
   },
 });
 
-export const { increment, decrement, multiply, divide, reset, addInput } =
-  counterSlice.actions;
+export const {
+  increment,
+  decrement,
+  multiply,
+  divide,
+  round,
+  reset,
+  addInput,
+} = counterSlice.actions;
 
 export default counterSlice.reducer;
