@@ -23,6 +23,10 @@ const Counter = () => {
     dispatch(reset());
   };
 
+  const onChangeHandler = (event) => {
+    setInputAmnt(event.target.value);
+  };
+
   return (
     <section>
       <p>Total Count : {counter}</p>
@@ -35,11 +39,7 @@ const Counter = () => {
       </div>
       <div className="input">
         <label>Input Amount : </label>
-        <input
-          type="number"
-          value={inputAmnt}
-          onChange={(event) => setInputAmnt(event.target.value)}
-        />
+        <input type="number" value={inputAmnt} onChange={onChangeHandler} />
       </div>
       <div className="extra-buttons">
         <button onClick={() => dispatch(addInput(addInputAmount))}>
