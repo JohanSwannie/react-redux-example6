@@ -6,6 +6,7 @@ import {
   decrement,
   multiply,
   divide,
+  round,
   reset,
   addInput,
 } from "./counterSlice";
@@ -25,10 +26,13 @@ const Counter = () => {
   return (
     <section>
       <p>Total Count : {counter}</p>
-      <button onClick={() => dispatch(increment())}>Add</button>
-      <button onClick={() => dispatch(decrement())}>Subtract</button>
-      <button onClick={() => dispatch(multiply())}>Multiply</button>
-      <button onClick={() => dispatch(divide())}>Divide</button>
+      <div className="initial-buttons">
+        <button onClick={() => dispatch(increment())}>Add</button>
+        <button onClick={() => dispatch(decrement())}>Subtract</button>
+        <button onClick={() => dispatch(multiply())}>Multiply</button>
+        <button onClick={() => dispatch(divide())}>Divide</button>
+        <button onClick={() => dispatch(round())}>Round it</button>
+      </div>
       <div className="input">
         <label>Input Amount : </label>
         <input
