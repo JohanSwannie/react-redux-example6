@@ -39,6 +39,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 2vh 0;
 }
 
 .extra-buttons button {
@@ -54,11 +55,14 @@ label {
 }
 
 input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #fff;
   background-color: rgb(147, 4, 4);
   width: 15vw;
   height: 7vh;
-  margin: 2vh 40vw;
+  margin: 2vh auto;
   font-size: 1.5rem;
   text-align: center;
 }
