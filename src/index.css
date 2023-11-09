@@ -20,43 +20,45 @@ p {
   font-size: 3rem;
 }
 
+.initial-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 button {
   color: #fff;
   background-color: blue;
-  width: 20vw;
+  width: 15vw;
   height: 8vh;
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-right: 2vw;
 }
 
-.actions {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  margin-top: 0.5rem;
-  font-size: 2rem;
+.extra-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.extra-buttons {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin: 0 17vw;
+.extra-buttons button {
+  width: 20vw;
 }
 
 label {
-  font-size: 2rem;
-}
-
-.input {
-  color: #fff;
-  background-color: blue;
-  text-align: center;
-  width: 28vw;
-  height: 14vh;
-  margin: 2vw 24vw;
-  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  margin: 2vh 0;
 }
 
 input {
+  color: #fff;
+  background-color: rgb(147, 4, 4);
+  width: 15vw;
+  height: 7vh;
+  margin: 2vh 40vw;
+  font-size: 1.5rem;
   text-align: center;
-  font-size: 2rem;
 }
